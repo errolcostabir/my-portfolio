@@ -30,12 +30,11 @@ class About extends Component {
     }
     render() {
         return (
-            <div className="container about">
+            <div className="container about" style={{ "width": "70vw" }}>
                 <div className="row">
-                    <nav className="fixed-top navbar about-nav">
+                    <nav className="fixed-top navbar mx-auto about-nav" style={{ "width": "70vw" }}>
                         <div className="container">
                             <Link to="/">Home</Link>
-                            <a href="#intro">about me</a>
                             <a href="#projects">Projects</a>
                             <a href="#internships">Internships</a>
                         </div>
@@ -45,21 +44,23 @@ class About extends Component {
                 <br />
                 <br />
                 <div className="row" id="intro">
-                    <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "50rem" }}>
-                        <p className="card-body about-para">I'm a Final Year Computer Engineering student of Padre Conceicao College of Engineering.
-                        During my free time I enjoy listening to music, singing and playing the guitar.
-                        I do frontend as well as backend web/app development</p>
+                    <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "50vw" }}>
+                        <p className="card-body about-para">
+                            I'm an undergrad Computer Engineering student who lives in Goa.
+                            My hobbies include listening to music, singing, photography and I also play the guitar. I enjoy frontend as well as backend development.
+                            Some of my projects and work experience is listed down below, do check it out.
+                        </p>
                     </div>
                 </div>
                 <br />
                 <br />
                 <div>
-                    <h2 className="h2-heading">Tech Stack/Programming languages I work with...</h2>
+                    <h2 className="h2-heading">My Techstack</h2>
                     <br />
                     <div className="row">
                         <img src={c} alt="..." className="icon-holder col" />
                         <img src={cpp} alt="..." className="icon-holder col" />
-                        <img src={java}  alt="..." className="icon-holder col" />
+                        <img src={java} alt="..." className="icon-holder col" />
                         <img src={js} alt="..." className="icon-holder col" />
                         <img src={python} alt="..." className="icon-holder col" />
                         <img src={php} alt="..." className="icon-holder col" />
@@ -80,9 +81,9 @@ class About extends Component {
                     <div className="row">
                         <h2 className="h2-heading">Projects</h2>
                         <br />
-                        <p style={{ "fontFamily": "Comfortaa" }}>These are some of the projects I have worked on in the past...</p>
+                        <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the projects I have worked on in the past...</p>
                     </div>
-                    <div className="row mx-auto" style={{ "width": "70rem" }}>
+                    <div className="row mx-auto" style={{ "width": "70vw" }}>
                         <div className="card mx-auto bg-dark mb-3 about-body" >
                             {
                                 this.state.projects.map((project) =>
@@ -99,10 +100,12 @@ class About extends Component {
                     <br />
                     <br />
                     <div className="row mx-auto" style={{ "width": "30rem", "textAlign": "center" }}>
-                        <br />
-                        <h4 className="h2-heading" style={{ "fontSize": "35px" }}>Quiz Web App</h4>
-                        <br />
-                        <img src={vid} alt="..." style={{ "objectFit": "scale-down" }} />
+                        <div className="row mx-auto">
+                            <br />
+                            <h4 className="h2-heading" style={{ "fontSize": "35px" }}>Quiz Web App</h4>
+                            <br />
+                            <img src={vid} alt="..." style={{ "objectFit": "scale-down" }} />
+                        </div>
                     </div>
                 </div>
                 <hr />
@@ -111,7 +114,7 @@ class About extends Component {
                 <div className="row" id="internships">
                     <div className="row">
                         <h2 className="h2-heading">Work Experience</h2>
-                        <p style={{ "fontFamily": "Comfortaa" }}>Here are some of the companies I have interned at in the past...</p>
+                        <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>Here are some of the companies I have interned at in the past...</p>
                     </div>
                     <div className="row mx-auto" style={{ "width": "30rem" }}>
                         <div className="card mx-auto bg-dark mb-3 about-body">

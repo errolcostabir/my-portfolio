@@ -20,13 +20,13 @@ body {
 }
 
 .about-para {
-    font-family: 'Dancing Script', cursive;
-    font-size: 25px;
+    font-family: "Comfortaa",cursive;
+    font-size: 18px;
 }
 
 .h2-heading {
-    font-family: 'Marck Script', cursive;
-    font-weight: 800;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
     font-size: 50px;
 }
 
@@ -57,10 +57,17 @@ body {
 }
 
 .main-body h2 {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 900;
     font-size: 45px;
     color: #1a2020;
+}
+
+.main-body h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    color: #1a2020;
+    font-weight: 600;
 }
 
 .footer a {
@@ -116,6 +123,7 @@ body {
     font-size: 15px;
 }
 
+/* font-family: 'Work Sans', sans-serif; */
 /*
 blue 266DD3
 grey 344055
