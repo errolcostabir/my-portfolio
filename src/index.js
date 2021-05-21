@@ -9,7 +9,7 @@ import Projects from './Projects';
 
 ReactDOM.render(
   <React.StrictMode>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Switch>
             <Route path="/" exact component={App} />
