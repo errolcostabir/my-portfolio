@@ -35,7 +35,7 @@ class About extends Component {
                     <nav className="fixed-top navbar about-nav">
                         <div className="container">
                             <Link to="/">Home</Link>
-                            <a href="#intro">Intro</a>
+                            <a href="#intro">about me</a>
                             <a href="#projects">Projects</a>
                             <a href="#internships">Internships</a>
                         </div>
