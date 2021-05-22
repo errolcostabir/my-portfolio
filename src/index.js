@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+//import { Provider } from 'react-redux';
+//import { createStore } from 'redux';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from './About';
 import Projects from './Projects';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <Switch>
             <Route path="/" exact component={App} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Redirect } from 'react-router-dom';
+//import { Link, Redirect } from 'react-router-dom';
 import Navbar from './Navbar';
 import './App.css';
 import errol from './resources/errol.jpg';
@@ -14,8 +14,8 @@ function App() {
           <img src={errol} alt="..." />
         </div>
         <br />
-        <br />
         <h2 >Hi, I'm Errol</h2>
+        <h5 >Student | Developer | Guitarist </h5>
       </div>
       <div className="footer">
         <div className="top-footer row">

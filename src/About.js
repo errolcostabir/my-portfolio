@@ -15,6 +15,7 @@ import node from './resources/node.png';
 import python from './resources/python.png';
 import sql from './resources/sql.png';
 import vid from './resources/github.gif';
+import Slider from './slider';
 
 class About extends Component {
     constructor(props) {
@@ -30,12 +31,11 @@ class About extends Component {
     }
     render() {
         return (
-            <div className="container about">
+            <div className="container about" style={{"width": "80vw"}}>
                 <div className="row">
-                    <nav className="fixed-top navbar about-nav">
+                    <nav className="fixed-top navbar mx-auto about-nav" style={{"width": "80vw"}}>
                         <div className="container">
                             <Link to="/">Home</Link>
-                            <a href="#intro">About Me</a>
                             <a href="#projects">Projects</a>
                             <a href="#internships">Internships</a>
                         </div>
@@ -45,33 +45,35 @@ class About extends Component {
                 <br />
                 <br />
                 <div className="row" id="intro">
-                    <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "50rem" }}>
-                        <p className="card-body about-para">I'm a Final Year Computer Engineering student of Padre Conceicao College of Engineering.
-                        During my free time I enjoy listening to music, singing and playing the guitar.
-                        I do frontend as well as backend web/app development</p>
+                    <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "60vw" }}>
+                        <p className="card-body about-para">
+                            I'm an undergrad Computer Engineering student who lives in Goa.
+                            My hobbies include listening to music, singing, photography and I also play the guitar. I enjoy working on frontend as well as backend development.
+                            Some of my projects and work experience is listed down below, do check it out.
+                        </p>
                     </div>
                 </div>
                 <br />
                 <br />
                 <div>
-                    <h2 className="h2-heading">Tech Stack/Programming languages I work with...</h2>
+                    <h2 className="h2-heading">My Techstack</h2>
                     <br />
                     <div className="row">
-                        <img src={c} className="icon-holder col" />
-                        <img src={cpp} className="icon-holder col" />
-                        <img src={java} className="icon-holder col" />
-                        <img src={js} className="icon-holder col" />
-                        <img src={python} className="icon-holder col" />
-                        <img src={php} className="icon-holder col" />
+                        <img src={c} alt="..." className="icon-holder col" />
+                        <img src={cpp} alt="..." className="icon-holder col" />
+                        <img src={java} alt="..." className="icon-holder col" />
+                        <img src={js} alt="..." className="icon-holder col" />
+                        <img src={python} alt="..." className="icon-holder col" />
+                        <img src={php} alt="..." className="icon-holder col" />
                     </div>
                     <br />
                     <div className="row">
-                        <img src={reactjs} className="icon-holder col" />
-                        <img src={node} className="icon-holder col" />
-                        <img src={flutter} className="icon-holder col" />
-                        <img src={html} className="icon-holder col" />
-                        <img src={css} className="icon-holder col" />
-                        <img src={sql} className="icon-holder col" />
+                        <img src={reactjs} alt="..." className="icon-holder col" />
+                        <img src={node} alt="..." className="icon-holder col" />
+                        <img src={flutter} alt="..." className="icon-holder col" />
+                        <img src={html} alt="..." className="icon-holder col" />
+                        <img src={css} alt="..." className="icon-holder col" />
+                        <img src={sql} alt="..." className="icon-holder col" />
                     </div>
                 </div>
                 <hr />
@@ -80,9 +82,9 @@ class About extends Component {
                     <div className="row">
                         <h2 className="h2-heading">Projects</h2>
                         <br />
-                        <p style={{ "fontFamily": "Comfortaa" }}>These are some of the projects I have worked on in the past...</p>
+                        <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the projects I have worked on in the past...</p>
                     </div>
-                    <div className="row mx-auto" style={{ "width": "70rem" }}>
+                    <div className="row mx-auto" style={{ "width": "60vw" }}>
                         <div className="card mx-auto bg-dark mb-3 about-body" >
                             {
                                 this.state.projects.map((project) =>
@@ -99,10 +101,12 @@ class About extends Component {
                     <br />
                     <br />
                     <div className="row mx-auto" style={{ "width": "30rem", "textAlign": "center" }}>
-                        <br />
-                        <h4 className="h2-heading" style={{ "fontSize": "35px" }}>Quiz Web App</h4>
-                        <br />
-                        <img src={vid} alt="..." style={{ "objectFit": "scale-down" }} />
+                        <div className="row mx-auto">
+                            <br />
+                            <h4 className="h2-heading" style={{ "fontSize": "35px" }}>Quiz Web App</h4>
+                            <br />
+                            <img src={vid} alt="..." style={{ "objectFit": "scale-down" }} />
+                        </div>
                     </div>
                 </div>
                 <hr />
@@ -111,7 +115,7 @@ class About extends Component {
                 <div className="row" id="internships">
                     <div className="row">
                         <h2 className="h2-heading">Work Experience</h2>
-                        <p style={{ "fontFamily": "Comfortaa" }}>Here are some of the companies I have interned at in the past...</p>
+                        <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>Here are some of the companies I have interned with in the past...</p>
                     </div>
                     <div className="row mx-auto" style={{ "width": "30rem" }}>
                         <div className="card mx-auto bg-dark mb-3 about-body">
@@ -130,6 +134,11 @@ class About extends Component {
                 </div>
                 <hr />
                 <br />
+                <h2 className="h2-heading">Photography Collection</h2>
+                <br/>
+                <Slider />
+                <hr />
+
                 <div className="container-fluid">
                     <div className="row about-bottom-footer">
                         <p>Errol Costabir | Goa-India</p>
