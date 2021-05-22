@@ -15,7 +15,7 @@ function App() {
         </div>
         <br />
         <h2 >Hi, I'm Errol</h2>
-        <h5>Student | Developer | Guitarist </h5>
+        <h5 >Student | Developer | Guitarist </h5>
       </div>
       <div className="footer">
         <div className="top-footer row">

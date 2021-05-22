@@ -15,6 +15,7 @@ import node from './resources/node.png';
 import python from './resources/python.png';
 import sql from './resources/sql.png';
 import vid from './resources/github.gif';
+import Slider from './slider';
 
 class About extends Component {
     constructor(props) {
@@ -30,9 +31,9 @@ class About extends Component {
     }
     render() {
         return (
-            <div className="container about" style={{ "width": "70vw" }}>
+            <div className="container about" style={{"width": "80vw"}}>
                 <div className="row">
-                    <nav className="fixed-top navbar mx-auto about-nav" style={{ "width": "70vw" }}>
+                    <nav className="fixed-top navbar mx-auto about-nav" style={{"width": "80vw"}}>
                         <div className="container">
                             <Link to="/">Home</Link>
                             <a href="#projects">Projects</a>
@@ -44,10 +45,10 @@ class About extends Component {
                 <br />
                 <br />
                 <div className="row" id="intro">
-                    <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "50vw" }}>
+                    <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "60vw" }}>
                         <p className="card-body about-para">
                             I'm an undergrad Computer Engineering student who lives in Goa.
-                            My hobbies include listening to music, singing, photography and I also play the guitar. I enjoy frontend as well as backend development.
+                            My hobbies include listening to music, singing, photography and I also play the guitar. I enjoy working on frontend as well as backend development.
                             Some of my projects and work experience is listed down below, do check it out.
                         </p>
                     </div>
@@ -83,7 +84,7 @@ class About extends Component {
                         <br />
                         <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the projects I have worked on in the past...</p>
                     </div>
-                    <div className="row mx-auto" style={{ "width": "70vw" }}>
+                    <div className="row mx-auto" style={{ "width": "60vw" }}>
                         <div className="card mx-auto bg-dark mb-3 about-body" >
                             {
                                 this.state.projects.map((project) =>
@@ -114,7 +115,7 @@ class About extends Component {
                 <div className="row" id="internships">
                     <div className="row">
                         <h2 className="h2-heading">Work Experience</h2>
-                        <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>Here are some of the companies I have interned at in the past...</p>
+                        <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>Here are some of the companies I have interned with in the past...</p>
                     </div>
                     <div className="row mx-auto" style={{ "width": "30rem" }}>
                         <div className="card mx-auto bg-dark mb-3 about-body">
@@ -133,6 +134,11 @@ class About extends Component {
                 </div>
                 <hr />
                 <br />
+                <h2 className="h2-heading">Photography Collection</h2>
+                <br/>
+                <Slider />
+                <hr />
+
                 <div className="container-fluid">
                     <div className="row about-bottom-footer">
                         <p>Errol Costabir | Goa-India</p>
