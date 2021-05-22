@@ -31,9 +31,9 @@ class About extends Component {
     }
     render() {
         return (
-            <div className="container about" style={{"width": "80vw"}}>
+            <div className="container about" style={{ "width": "80vw" }}>
                 <div className="row">
-                    <nav className="fixed-top navbar mx-auto about-nav" style={{"width": "80vw"}}>
+                    <nav className="fixed-top navbar mx-auto about-nav" style={{ "width": "80vw" }}>
                         <div className="container">
                             <Link to="/">Home</Link>
                             <a href="#projects">Projects</a>
@@ -55,7 +55,7 @@ class About extends Component {
                 </div>
                 <br />
                 <br />
-                <div>
+                <div className="row">
                     <h2 className="h2-heading">My Techstack</h2>
                     <br />
                     <div className="row">
@@ -76,7 +76,7 @@ class About extends Component {
                         <img src={sql} alt="..." className="icon-holder col" />
                     </div>
                 </div>
-                <hr />
+                <hr></hr>
                 <br />
                 <div className="row" id="projects">
                     <div className="row">
@@ -84,7 +84,7 @@ class About extends Component {
                         <br />
                         <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the projects I have worked on in the past...</p>
                     </div>
-                    <div className="row mx-auto" style={{ "width": "60vw" }}>
+                    <div className="row mx-auto" style={{ "width": "70vw" }}>
                         <div className="card mx-auto bg-dark mb-3 about-body" >
                             {
                                 this.state.projects.map((project) =>
@@ -109,7 +109,7 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
-                <hr />
+                <hr></hr>
                 <br />
                 <br />
                 <div className="row" id="internships">
@@ -121,7 +121,7 @@ class About extends Component {
                         <div className="card mx-auto border-dark mb-3 about-body">
                             {
                                 this.state.internships.map((intern) =>
-                                    <ul className="card-body" style={{"color": "black"}}>
+                                    <ul className="card-body" style={{ "color": "black" }}>
                                         <li>{intern.company}</li>
                                         <ul>
                                             <li>{intern.title}</li>
@@ -132,12 +132,12 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
-                <hr />
+                <hr></hr>
                 <br />
                 <h2 className="h2-heading">Photography Collection</h2>
-                <br/>
+                <br />
                 <Slider />
-                <hr />
+                <hr></hr>
 
                 <div className="container-fluid">
                     <div className="row about-bottom-footer">
