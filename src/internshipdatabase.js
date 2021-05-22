@@ -1,6 +1,6 @@
 const intern=[
     {
-        "company": "Virtual Webs Servers Private Limited",
+        "company": "Virtual Webs",
         "title": "Software Tester",
         "description": "Manual and Automated Software/App Testing"
     },
@@ -12,7 +12,7 @@ const intern=[
     },
 
     {
-        "company": "Kapslock.in",
+        "company": "Kapslock",
         "title": "Software Developer Intern",
         "description": "Backend Development using NodeJS"
     }

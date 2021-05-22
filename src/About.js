@@ -115,13 +115,13 @@ class About extends Component {
                 <div className="row" id="internships">
                     <div className="row">
                         <h2 className="h2-heading">Work Experience</h2>
-                        <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>Here are some of the companies I have interned with in the past...</p>
+                        <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the companies I have interned with in the past...</p>
                     </div>
-                    <div className="row mx-auto" style={{ "width": "30rem" }}>
-                        <div className="card mx-auto bg-dark mb-3 about-body">
+                    <div className="row mx-auto" style={{ "width": "25rem" }}>
+                        <div className="card mx-auto border-dark mb-3 about-body">
                             {
                                 this.state.internships.map((intern) =>
-                                    <ul className="card-body">
+                                    <ul className="card-body" style={{"color": "black"}}>
                                         <li>{intern.company}</li>
                                         <ul>
                                             <li>{intern.title}</li>
