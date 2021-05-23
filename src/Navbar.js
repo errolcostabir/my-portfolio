@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <nav className="fixed-top navbar">
             <div className="container">
-                <Link class="navbar-brand" style={{ fontFamily: "Comfortaa", color: "#293132" }} to="/about">About Me</Link>
+                <Link class="navbar-brand" style={{ fontFamily: "Comfortaa", color: "#293132", "fontSize": "17px" }} to="/about">About Me</Link>
             </div>
         </nav>
     );

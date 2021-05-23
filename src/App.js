@@ -14,12 +14,10 @@ function App() {
         <div className="img-container">
           <img src={errol} alt="..." />
         </div>
-        <br />
         <Fade bottom cascade>
           <h2 >Hi, I'm Errol</h2>
           <p className="definition">Student | Developer | Guitarist </p>
         </Fade>
-
       </div>
       <div className="footer">
         <div className="top-footer row">

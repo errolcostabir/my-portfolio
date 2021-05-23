@@ -46,17 +46,17 @@ class About extends Component {
                     <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "70vw" }}>
                         <Fade bottom>
                             <p className="card-body about-para">
-                                I'm an undergrad Computer Engineering student who lives in Goa.
-                                My hobbies include listening to music, singing, photography and I also play the guitar. I enjoy working on frontend as well as backend development.
-                                Some of my projects and work experience is listed down below, do check it out.
+                                I'm a Computer Engineering student who lives in Goa.
+                                My hobbies include listening to music, singing, photography and I also play the guitar. I enjoy working as a frontend developer as well as backend developer.
+                                Some of my projects and photography collection is down below, do check it out.
                         </p>
                         </Fade>
                     </div>
                 </div>
-
                 <br />
-                <br />
-                <h2 className="h2-heading">My Techstack</h2>
+                <Fade right>
+                    <h2 className="h2-heading">My Techstack</h2>
+                </Fade>
                 <br />
                 <div className="row" style={{ "width": "90vw" }}>
                     <Fade left>
@@ -69,7 +69,6 @@ class About extends Component {
                             <img src={php} alt="..." className="col icon-holder " />
                         </div>
                     </Fade>
-                    <br />
                     <Fade right>
                         <div className="row" style={{ "width": "90vw" }}>
                             <img src={reactjs} alt="..." className="col icon-holder " />
@@ -85,9 +84,12 @@ class About extends Component {
                 <br />
                 <div className="row" id="projects">
                     <div className="row">
-                        <h2 className="h2-heading">Projects</h2>
-                        <br />
-                        <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the projects I have worked on in the past...</p>
+                        <Fade right>
+                            <h2 className="h2-heading">Projects</h2>
+                        </Fade>
+                        <Fade left>
+                            <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the projects I have worked on in the past...</p>
+                        </Fade>
                     </div>
                     <div className="row mx-auto" style={{ "width": "80vw" }}>
                         <div className="card mx-auto bg-dark mb-3 about-body" >
@@ -104,7 +106,6 @@ class About extends Component {
                         </div>
                     </div>
                     <br />
-                    <br />
                     <div className="row mx-auto" style={{ "width": "30rem", "textAlign": "center" }}>
                         <div className="row mx-auto">
                             <br />
@@ -116,11 +117,14 @@ class About extends Component {
                 </div>
                 <hr></hr>
                 <br />
-                <br />
                 <div className="row" id="internships">
                     <div className="row">
-                        <h2 className="h2-heading">Work Experience</h2>
-                        <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the companies I have interned with in the past...</p>
+                        <Fade right>
+                            <h2 className="h2-heading">Work Experience</h2>
+                        </Fade>
+                        <Fade left>
+                            <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the companies I have interned with in the past...</p>
+                        </Fade>
                     </div>
                     <div className="row mx-auto" style={{ "width": "25rem" }}>
                         <div className="card mx-auto  mb-3 about-body" style={{ "borderColor": "black" }}>
@@ -141,17 +145,17 @@ class About extends Component {
                 </div>
                 <hr></hr>
                 <br />
-                <h2 className="h2-heading">Photography Collection</h2>
+                <Fade right>
+                    <h2 className="h2-heading">Photography Collection</h2>
+                </Fade>
                 <br />
                 <Slider />
                 <hr></hr>
-
                 <div className="container-fluid">
                     <div className="row about-bottom-footer">
                         <p>Errol Costabir | Goa-India</p>
                     </div>
                 </div>
-
             </div >
         );
     }
