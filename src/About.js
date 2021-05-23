@@ -53,23 +53,23 @@ class About extends Component {
                 <br />
                 <h2 className="h2-heading">My Techstack</h2>
                 <br />
-                <div className="row">
-                    <div className="row">
-                        <img src={c} alt="..." className="icon-holder col" />
-                        <img src={cpp} alt="..." className="icon-holder col" />
-                        <img src={java} alt="..." className="icon-holder col" />
-                        <img src={js} alt="..." className="icon-holder col" />
-                        <img src={python} alt="..." className="icon-holder col" />
-                        <img src={php} alt="..." className="icon-holder col" />
+                <div className="row" style={{ "width": "90vw" }}>
+                    <div className="row" style={{ "width": "90vw" }}>
+                        <img src={c} alt="..." className="col icon-holder " />
+                        <img src={cpp} alt="..." className="col icon-holder " />
+                        <img src={java} alt="..." className="col icon-holder " />
+                        <img src={js} alt="..." className="col icon-holder " />
+                        <img src={python} alt="..." className="col icon-holder " />
+                        <img src={php} alt="..." className="col icon-holder " />
                     </div>
                     <br />
-                    <div className="row">
-                        <img src={reactjs} alt="..." className="icon-holder col" />
-                        <img src={node} alt="..." className="icon-holder col" />
-                        <img src={flutter} alt="..." className="icon-holder col" />
-                        <img src={html} alt="..." className="icon-holder col" />
-                        <img src={css} alt="..." className="icon-holder col" />
-                        <img src={sql} alt="..." className="icon-holder col" />
+                    <div className="row" style={{ "width": "90vw" }}>
+                        <img src={reactjs} alt="..." className="col icon-holder " />
+                        <img src={node} alt="..." className="col icon-holder " />
+                        <img src={flutter} alt="..." className="col icon-holder " />
+                        <img src={html} alt="..." className="col icon-holder " />
+                        <img src={css} alt="..." className="col icon-holder " />
+                        <img src={sql} alt="..." className="col icon-holder " />
                     </div>
                 </div>
                 <hr></hr>
