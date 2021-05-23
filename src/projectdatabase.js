@@ -27,12 +27,6 @@ const projects = [
         "name": "Employee attendance management app",
         "language": "Developed in Flutter, PHP and mySQL",
         "description": "An android app to track the attendance of employees in a office.",
-    },
-
-    {
-        "name": "Zinque.in Website",
-        "language": "html css js",
-        "description": "A website design for zinque.in"
     }
 ]
 

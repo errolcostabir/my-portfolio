@@ -25,15 +25,11 @@ class About extends Component {
             internships: intern
         }
     }
-    componentDidMount() {
-        console.log(this.state.projects);
-        console.log(this.state.internships);
-    }
     render() {
         return (
-            <div className="container about" style={{ "width": "80vw" }}>
+            <div className="container about" >
                 <div className="row">
-                    <nav className="fixed-top navbar mx-auto about-nav" style={{ "width": "80vw" }}>
+                    <nav className="fixed-top navbar mx-auto about-nav">
                         <div className="container">
                             <Link to="/">Home</Link>
                             <a href="#projects">Projects</a>
@@ -45,7 +41,7 @@ class About extends Component {
                 <br />
                 <br />
                 <div className="row" id="intro">
-                    <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "60vw" }}>
+                    <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "70vw" }}>
                         <p className="card-body about-para">
                             I'm an undergrad Computer Engineering student who lives in Goa.
                             My hobbies include listening to music, singing, photography and I also play the guitar. I enjoy working on frontend as well as backend development.
@@ -55,7 +51,7 @@ class About extends Component {
                 </div>
                 <br />
                 <br />
-                <div className="row">
+                <div>
                     <h2 className="h2-heading">My Techstack</h2>
                     <br />
                     <div className="row">
@@ -84,15 +80,13 @@ class About extends Component {
                         <br />
                         <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the projects I have worked on in the past...</p>
                     </div>
-                    <div className="row mx-auto" style={{ "width": "70vw" }}>
+                    <div className="row mx-auto" style={{ "width": "80vw" }}>
                         <div className="card mx-auto bg-dark mb-3 about-body" >
                             {
                                 this.state.projects.map((project) =>
                                     <ul className="card-body">
-                                        <li>{project.name}</li>
-                                        <ul>
-                                            <li>{project.description}</li>
-                                        </ul>
+                                        <li style={{"fontWeight": "bold"}}>{project.name}</li>
+                                        <p>{project.description}</p>
                                     </ul>
                                 )
                             }
@@ -118,13 +112,13 @@ class About extends Component {
                         <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the companies I have interned with in the past...</p>
                     </div>
                     <div className="row mx-auto" style={{ "width": "25rem" }}>
-                        <div className="card mx-auto border-dark mb-3 about-body">
+                        <div className="card mx-auto  mb-3 about-body" style={{"borderColor": "black"}}>
                             {
                                 this.state.internships.map((intern) =>
-                                    <ul className="card-body" style={{ "color": "black" }}>
-                                        <li>{intern.company}</li>
+                                    <ul className="card-body" >
+                                        <li style={{ "color": "black" }}>{intern.company}</li>
                                         <ul>
-                                            <li>{intern.title}</li>
+                                            <p style={{ "color": "black" }}>{intern.title}</p>
                                         </ul>
                                     </ul>
                                 )

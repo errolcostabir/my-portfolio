@@ -1,3 +1,49 @@
+@media screen and (max-width: 480px) {
+    .about-para {
+        font-family: "Comfortaa", cursive;
+        font-size: 13px;
+    }
+    .h2-heading {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 900;
+        font-size: 45px;
+    }
+    .about-body {
+        font-family: 'Comfortaa', cursive;
+        color: rgb(184, 184, 184);
+        font-size: 12px;
+    }
+    .about-body li {
+        font-family: 'Comfortaa', cursive;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .about-para {
+        font-family: "Comfortaa", cursive;
+        font-size: 18px;
+    }
+    .h2-heading {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 900;
+        font-size: 50px;
+    }
+    .about-body {
+        font-family: 'Comfortaa', cursive;
+        color: rgb(184, 184, 184);
+        font-size: 15px;
+    }
+    .about-body li {
+        font-family: 'Comfortaa', cursive;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+    }
+}
+
 body {
     background-color: white;
     padding: 5px;
@@ -7,20 +53,14 @@ body {
     background-color: white;
 }
 
+.about {
+    width: 90vw;
+}
+
 .about-nav {
     background-color: white;
     text-decoration: none;
-}
-
-.about-para {
-    font-family: "Comfortaa",cursive;
-    font-size: 18px;
-}
-
-.h2-heading {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 900;
-    font-size: 50px;
+    width: 90vw;
 }
 
 .icon-holder {
@@ -33,7 +73,6 @@ body {
     text-decoration: none;
     color: black;
     font-family: "Comfortaa";
-
 }
 
 .footer {
@@ -101,11 +140,11 @@ body {
     text-decoration: none;
 }
 
-.bottom-footer p{
+.bottom-footer p {
     font-size: 17px;
 }
 
-.about-bottom-footer p{
+.about-bottom-footer p {
     width: 100%;
     position: relative;
     font-family: 'Comfortaa', cursive;
@@ -116,13 +155,7 @@ body {
     font-size: 14px;
 }
 
-.about-body {
-    font-family: 'Comfortaa', cursive;
-    color: white;
-    font-size: 15px;
-}
-
-hr{
+hr {
     height: 1px;
     color: black;
 }
