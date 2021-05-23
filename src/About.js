@@ -51,25 +51,29 @@ class About extends Component {
                 </div>
                 <br />
                 <br />
-                <div>
+                <div className="row card">
                     <h2 className="h2-heading">My Techstack</h2>
                     <br />
-                    <div className="row">
-                        <img src={c} alt="..." className="icon-holder col" />
-                        <img src={cpp} alt="..." className="icon-holder col" />
-                        <img src={java} alt="..." className="icon-holder col" />
-                        <img src={js} alt="..." className="icon-holder col" />
-                        <img src={python} alt="..." className="icon-holder col" />
-                        <img src={php} alt="..." className="icon-holder col" />
-                    </div>
-                    <br />
-                    <div className="row">
-                        <img src={reactjs} alt="..." className="icon-holder col" />
-                        <img src={node} alt="..." className="icon-holder col" />
-                        <img src={flutter} alt="..." className="icon-holder col" />
-                        <img src={html} alt="..." className="icon-holder col" />
-                        <img src={css} alt="..." className="icon-holder col" />
-                        <img src={sql} alt="..." className="icon-holder col" />
+                    <div className="card-body">
+                        <div className="row">
+                            <img src={c} alt="..." className="icon-holder col" />
+                            <img src={cpp} alt="..." className="icon-holder col" />
+                            <img src={java} alt="..." className="icon-holder col" />
+                            <img src={js} alt="..." className="icon-holder col" />
+                            <img src={python} alt="..." className="icon-holder col" />
+                            <img src={php} alt="..." className="icon-holder col" />
+                        </div>
+                        <br />
+                        <div className="row">
+                            <img src={reactjs} alt="..." className="icon-holder col" />
+                            <img src={node} alt="..." className="icon-holder col" />
+                            <img src={flutter} alt="..." className="icon-holder col" />
+                            <img src={html} alt="..." className="icon-holder col" />
+                            <img src={css} alt="..." className="icon-holder col" />
+                            <img src={sql} alt="..." className="icon-holder col" />
+                        </div>
+
+
                     </div>
                 </div>
                 <hr></hr>
@@ -85,7 +89,7 @@ class About extends Component {
                             {
                                 this.state.projects.map((project) =>
                                     <ul className="card-body">
-                                        <li style={{"fontWeight": "bold"}}>{project.name}</li>
+                                        <li style={{ "fontWeight": "bold" }}>{project.name}</li>
                                         <p>{project.description}</p>
                                     </ul>
                                 )
@@ -112,7 +116,7 @@ class About extends Component {
                         <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the companies I have interned with in the past...</p>
                     </div>
                     <div className="row mx-auto" style={{ "width": "25rem" }}>
-                        <div className="card mx-auto  mb-3 about-body" style={{"borderColor": "black"}}>
+                        <div className="card mx-auto  mb-3 about-body" style={{ "borderColor": "black" }}>
                             {
                                 this.state.internships.map((intern) =>
                                     <ul className="card-body" >
