@@ -72,8 +72,6 @@ class About extends Component {
                             <img src={css} alt="..." className="icon-holder col" />
                             <img src={sql} alt="..." className="icon-holder col" />
                         </div>
-
-
                     </div>
                 </div>
                 <hr></hr>
