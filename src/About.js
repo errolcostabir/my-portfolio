@@ -16,6 +16,7 @@ import python from './resources/python.png';
 import sql from './resources/sql.png';
 import vid from './resources/github.gif';
 import Slider from './slider';
+import Fade from 'react-reveal';
 
 class About extends Component {
     constructor(props) {
@@ -40,37 +41,45 @@ class About extends Component {
                 <br />
                 <br />
                 <br />
+
                 <div className="row" id="intro">
                     <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "70vw" }}>
-                        <p className="card-body about-para">
-                            I'm an undergrad Computer Engineering student who lives in Goa.
-                            My hobbies include listening to music, singing, photography and I also play the guitar. I enjoy working on frontend as well as backend development.
-                            Some of my projects and work experience is listed down below, do check it out.
+                        <Fade bottom>
+                            <p className="card-body about-para">
+                                I'm an undergrad Computer Engineering student who lives in Goa.
+                                My hobbies include listening to music, singing, photography and I also play the guitar. I enjoy working on frontend as well as backend development.
+                                Some of my projects and work experience is listed down below, do check it out.
                         </p>
+                        </Fade>
                     </div>
                 </div>
+
                 <br />
                 <br />
                 <h2 className="h2-heading">My Techstack</h2>
                 <br />
                 <div className="row" style={{ "width": "90vw" }}>
-                    <div className="row" style={{ "width": "90vw" }}>
-                        <img src={c} alt="..." className="col icon-holder " />
-                        <img src={cpp} alt="..." className="col icon-holder " />
-                        <img src={java} alt="..." className="col icon-holder " />
-                        <img src={js} alt="..." className="col icon-holder " />
-                        <img src={python} alt="..." className="col icon-holder " />
-                        <img src={php} alt="..." className="col icon-holder " />
-                    </div>
+                    <Fade left>
+                        <div className="row" style={{ "width": "90vw" }}>
+                            <img src={c} alt="..." className="col icon-holder " />
+                            <img src={cpp} alt="..." className="col icon-holder " />
+                            <img src={java} alt="..." className="col icon-holder " />
+                            <img src={js} alt="..." className="col icon-holder " />
+                            <img src={python} alt="..." className="col icon-holder " />
+                            <img src={php} alt="..." className="col icon-holder " />
+                        </div>
+                    </Fade>
                     <br />
-                    <div className="row" style={{ "width": "90vw" }}>
-                        <img src={reactjs} alt="..." className="col icon-holder " />
-                        <img src={node} alt="..." className="col icon-holder " />
-                        <img src={flutter} alt="..." className="col icon-holder " />
-                        <img src={html} alt="..." className="col icon-holder " />
-                        <img src={css} alt="..." className="col icon-holder " />
-                        <img src={sql} alt="..." className="col icon-holder " />
-                    </div>
+                    <Fade right>
+                        <div className="row" style={{ "width": "90vw" }}>
+                            <img src={reactjs} alt="..." className="col icon-holder " />
+                            <img src={node} alt="..." className="col icon-holder " />
+                            <img src={flutter} alt="..." className="col icon-holder " />
+                            <img src={html} alt="..." className="col icon-holder " />
+                            <img src={css} alt="..." className="col icon-holder " />
+                            <img src={sql} alt="..." className="col icon-holder " />
+                        </div>
+                    </Fade>
                 </div>
                 <hr></hr>
                 <br />
@@ -82,14 +91,16 @@ class About extends Component {
                     </div>
                     <div className="row mx-auto" style={{ "width": "80vw" }}>
                         <div className="card mx-auto bg-dark mb-3 about-body" >
-                            {
-                                this.state.projects.map((project) =>
-                                    <ul className="card-body">
-                                        <li style={{ "fontWeight": "bold" }}>{project.name}</li>
-                                        <p>{project.description}</p>
-                                    </ul>
-                                )
-                            }
+                            <Fade bottom>
+                                {
+                                    this.state.projects.map((project) =>
+                                        <ul className="card-body">
+                                            <li style={{ "fontWeight": "bold" }}>{project.name}</li>
+                                            <p>{project.description}</p>
+                                        </ul>
+                                    )
+                                }
+                            </Fade>
                         </div>
                     </div>
                     <br />
@@ -113,16 +124,18 @@ class About extends Component {
                     </div>
                     <div className="row mx-auto" style={{ "width": "25rem" }}>
                         <div className="card mx-auto  mb-3 about-body" style={{ "borderColor": "black" }}>
-                            {
-                                this.state.internships.map((intern) =>
-                                    <ul className="card-body" >
-                                        <li style={{ "color": "black" }}>{intern.company}</li>
-                                        <ul>
-                                            <p style={{ "color": "black" }}>{intern.title}</p>
+                            <Fade bottom>
+                                {
+                                    this.state.internships.map((intern) =>
+                                        <ul className="card-body" >
+                                            <li style={{ "color": "black" }}>{intern.company}</li>
+                                            <ul>
+                                                <p style={{ "color": "black" }}>{intern.title}</p>
+                                            </ul>
                                         </ul>
-                                    </ul>
-                                )
-                            }
+                                    )
+                                }
+                            </Fade>
                         </div>
                     </div>
                 </div>
@@ -139,7 +152,7 @@ class About extends Component {
                     </div>
                 </div>
 
-            </div>
+            </div >
         );
     }
 }

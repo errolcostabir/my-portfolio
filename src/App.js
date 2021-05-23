@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import './App.css';
 import errol from './resources/errol.jpg';
+import Fade from 'react-reveal';
 
 function App() {
   return (
@@ -14,8 +15,11 @@ function App() {
           <img src={errol} alt="..." />
         </div>
         <br />
-        <h2 >Hi, I'm Errol</h2>
-        <p className="definition">Student | Developer | Guitarist </p>
+        <Fade bottom cascade>
+          <h2 >Hi, I'm Errol</h2>
+          <p className="definition">Student | Developer | Guitarist </p>
+        </Fade>
+
       </div>
       <div className="footer">
         <div className="top-footer row">
