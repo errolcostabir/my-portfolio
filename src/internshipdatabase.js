@@ -15,6 +15,11 @@ const intern=[
         "company": "Kapslock",
         "title": "Software Developer Intern",
         "description": "Backend Development using NodeJS"
+    },
+    {
+        "company": "Persistent Systems",
+        "title": "Software Engineer",
+        "description": "AWS"
     }
 ]
 

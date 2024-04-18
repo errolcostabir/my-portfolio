@@ -2,19 +2,6 @@ import { Component } from "react";
 import projects from './projectdatabase';
 import intern from './internshipdatabase';
 import { Link } from "react-router-dom";
-import reactjs from './resources/react.png';
-import html from './resources/html.png';
-import css from './resources/css.png';
-import php from './resources/php.png';
-import c from './resources/c.png';
-import cpp from './resources/cpp.png';
-import flutter from './resources/flutter.png';
-import java from './resources/java.png';
-import js from './resources/js.png';
-import node from './resources/node.png';
-import python from './resources/python.png';
-import sql from './resources/sql.png';
-import vid from './resources/github.gif';
 import Slider from './slider';
 import Fade from 'react-reveal';
 
@@ -34,107 +21,71 @@ class About extends Component {
                         <div className="container">
                             <Link to="/">Home</Link>
                             <a href="#projects">Projects</a>
-                            <a href="#internships">Internships</a>
+                            <a href="#internships">Experience</a>
                         </div>
                     </nav>
                 </div>
                 <br />
                 <br />
-                <br />
 
                 <div className="row" id="intro">
-                    <div className="card text-center mx-auto border-dark mb-3" style={{ "width": "70vw" }}>
+                    <div className="text-center mx-auto border-dark mb-2" style={{ "width": "90vw" }}>
                         <Fade bottom>
                             <p className="card-body about-para">
-                                I'm a Computer Engineering student who lives in Goa.
-                                My hobbies include listening to music, singing, photography and I also play the guitar. I enjoy working as a frontend developer as well as backend developer.
-                                Some of my projects and photography collection is down below, do check it out.
+                            I'm an experienced software engineer proficient in delivering robust software solutions. 
+                            Upskilled in multiple programming languages and 
+                            technologies, with a focus on problem-solving and delivering quality products to the clients. 
+                            I'm passionate about staying updated with industry trends and continuously enhancing skills to drive innovation and 
+                            efficiency. Proven ability to work collaboratively in agile environments to meet project deadlines and 
+                            exceed client expectations. Well, that was about my professional career. During my free time I like to listen to music. 
+                            Some of my other hobbies include, cycling, outdoor running, going to gym, photography, singing and I also strum the guitar.  
                         </p>
                         </Fade>
                     </div>
                 </div>
-                <br />
-                <Fade right>
-                    <h2 className="h2-heading">My Techstack</h2>
-                </Fade>
-                <br />
-                <div className="row" style={{ "width": "90vw" }}>
-                    <Fade left>
-                        <div className="row" style={{ "width": "90vw" }}>
-                            <img src={c} alt="..." className="col icon-holder " />
-                            <img src={cpp} alt="..." className="col icon-holder " />
-                            <img src={java} alt="..." className="col icon-holder " />
-                            <img src={js} alt="..." className="col icon-holder " />
-                            <img src={python} alt="..." className="col icon-holder " />
-                            <img src={php} alt="..." className="col icon-holder " />
-                        </div>
-                    </Fade>
-                    <Fade right>
-                        <div className="row" style={{ "width": "90vw" }}>
-                            <img src={reactjs} alt="..." className="col icon-holder " />
-                            <img src={node} alt="..." className="col icon-holder " />
-                            <img src={flutter} alt="..." className="col icon-holder " />
-                            <img src={html} alt="..." className="col icon-holder " />
-                            <img src={css} alt="..." className="col icon-holder " />
-                            <img src={sql} alt="..." className="col icon-holder " />
-                        </div>
-                    </Fade>
-                </div>
                 <hr></hr>
-                <br />
                 <div className="row" id="projects">
                     <div className="row">
                         <Fade right>
                             <h2 className="h2-heading">Projects</h2>
                         </Fade>
                         <Fade left>
-                            <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the projects I have worked on in the past...</p>
+                            <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the projects I have worked on...</p>
                         </Fade>
                     </div>
-                    <div className="row mx-auto" style={{ "width": "80vw" }}>
-                        <div className="card mx-auto bg-dark mb-3 about-body" >
+                    <div className="row mx-auto" style={{ "width": "90vw"}}>
+                        <div className="card mx-auto mb-3 about-body" style={{backgroundColor: "#1d2324"}}>
                             <Fade bottom>
                                 {
                                     this.state.projects.map((project) =>
                                         <ul className="card-body">
                                             <li style={{ "fontWeight": "bold" }}>{project.name}</li>
                                             <p>{project.description}</p>
+                                            <p><span style={{"fontWeight": "bold", color:"white"}}>Tech Stack:</span> {project.language}</p>
                                         </ul>
                                     )
                                 }
                             </Fade>
                         </div>
                     </div>
-                    <br />
-                    <div className="row mx-auto" style={{ "width": "30rem", "textAlign": "center" }}>
-                        <div className="row mx-auto">
-                            <br />
-                            <h4 className="h2-heading" style={{ "fontSize": "35px" }}>Quiz Web App</h4>
-                            <br />
-                            <img src={vid} alt="..." style={{ "objectFit": "scale-down" }} />
-                        </div>
                     </div>
-                </div>
                 <hr></hr>
                 <br />
                 <div className="row" id="internships">
                     <div className="row">
                         <Fade right>
-                            <h2 className="h2-heading">Work Experience</h2>
-                        </Fade>
-                        <Fade left>
-                            <p style={{ "fontFamily": "Comfortaa", "fontSize": "20px" }}>These are some of the companies I have interned with in the past...</p>
+                            <h2 className="h2-heading">Experience</h2>
                         </Fade>
                     </div>
                     <div className="row mx-auto" style={{ "width": "25rem" }}>
-                        <div className="card mx-auto  mb-3 about-body" style={{ "borderColor": "black" }}>
+                        <div className="card mx-auto  mb-3 about-body" style={{ backgroundColor: "#1d2324" }}>
                             <Fade bottom>
                                 {
                                     this.state.internships.map((intern) =>
                                         <ul className="card-body" >
-                                            <li style={{ "color": "black" }}>{intern.company}</li>
+                                            <li style={{ "color": "#cad1d2" }}>{intern.company}</li>
                                             <ul>
-                                                <p style={{ "color": "black" }}>{intern.title}</p>
+                                                <p style={{ "color": "#cad1d2" }}>{intern.title}</p>
                                             </ul>
                                         </ul>
                                     )

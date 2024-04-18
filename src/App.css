@@ -7,10 +7,11 @@
         font-family: 'Work Sans', sans-serif;
         font-weight: 900;
         font-size: 45px;
+        color: #cad1d2;
     }
     .about-body {
         font-family: 'Comfortaa', cursive;
-        color: rgb(184, 184, 184);
+        color: #cad1d2;
         font-size: 12px;
     }
     .about-body li {
@@ -30,6 +31,7 @@
         font-family: 'Work Sans', sans-serif;
         font-weight: 900;
         font-size: 50px;
+        color: #cad1d2;
     }
     .about-body {
         font-family: 'Comfortaa', cursive;
@@ -45,22 +47,19 @@
 }
 
 body {
-    background-color: white;
     padding: 5px;
-}
-
-.home {
-    background-color: white;
 }
 
 .about {
     width: 90vw;
+    color: #c8c6c6;
 }
 
 .about-nav {
-    background-color: white;
+    background-color: black;
     text-decoration: none;
-    width: 90vw;
+    width: 100vw;
+    color: #c8c6c6;
 }
 
 .icon-holder {
@@ -71,7 +70,7 @@ body {
 
 .about-nav a {
     text-decoration: none;
-    color: black;
+    color: #c8c6c6;
     font-family: "Comfortaa";
 }
 
@@ -93,13 +92,14 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-weight: 900;
     font-size: 45px;
-    color: #1a2020;
+    /*color: #1a2020; */
+    color: #cad1d2;
 }
 
 .definition {
     font-family: 'Comfortaa', cursive;
     font-size: 20px;
-    color: #1a2020;
+    color: #888787;
     font-weight: 100;
 }
 
@@ -157,5 +157,6 @@ body {
 
 hr {
     height: 1px;
-    color: black;
+    color: rgb(255, 255, 255);
+   
 }

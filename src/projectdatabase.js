@@ -1,5 +1,10 @@
 const projects = [
     {
+        "name": "Customer Churn Prediction",
+        "language": "Machine Learning, Random Forest Classifier, EDA, Python",
+        "description": "A flask app that is used to predict whether the customer will churn or no"
+    },
+    {
         "name": "Student Teacher Management System",
         "language": "Developed in c# and SQL",
         "description": "A desktop application to tackle the query issues between students and teachers and a portal to view marks for students",

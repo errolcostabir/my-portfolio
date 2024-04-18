@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-//import { Provider } from 'react-redux';
-//import { createStore } from 'redux';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from './About';
 import Projects from './Projects';
